@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 import Footer from "./Footer";
+import Image from "next/image";
+import globi from "../../../public/icons/globi-icon.svg"
 
 type Header2Props = {};
 
@@ -92,15 +94,13 @@ const Header2: React.FC<Header2Props> = () => {
         )}
       </motion.button>
       <motion.div
-        className="ml-4 flex h-12 w-12 items-center justify-center rounded-full border-[1.5px] border-color-white"
+        className="ml-4 flex h-12 w-12 items-center justify-center rounded-full"
         initial={{ x: 100, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ delay: 1.1, duration: 0.5 }}
       >
         <Link href="/">
-        <p className="text-[0.55rem] font-medium uppercase tracking-wider">
-          Globi.
-        </p>
+          <Image src={globi} width={150} alt="logo" />
         </Link>
       </motion.div>
 

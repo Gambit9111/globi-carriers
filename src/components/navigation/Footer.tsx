@@ -1,20 +1,19 @@
 import React from "react";
 import Link from "next/link";
+import globi from "../../../public/icons/globi-icon.svg";
+import Image from "next/image";
 
 type FooterProps = {};
 
-
 const Footer: React.FC<FooterProps> = () => {
   return (
-    <footer className="bg-color-black relative overflow-hidden">
+    <footer className="relative overflow-hidden bg-color-black">
       <div className="mb-8 mt-16 h-[1px] w-full bg-color-white" />
       <div className="flex">
         <div className="ml-4 flex w-12 flex-col items-center gap-8 pb-8">
-          <div className="flex h-12 w-12 items-center justify-center rounded-full border-[1.5px] border-color-white">
-            <p className="text-[0.55rem] font-medium uppercase tracking-wider">
-              Globi.
-            </p>
-          </div>
+          <Link href="/" className="mt-4">
+            <Image src={globi} width={150} alt="logo" />
+          </Link>
           <svg
             width="24"
             height="24"
@@ -93,12 +92,10 @@ const Footer: React.FC<FooterProps> = () => {
           </div>
         </div>
       </div>
-      <p className="text-[0.6rem] font-medium uppercase tracking-wider text-center ml-6 p-1 text-color-yellow/30">
+      <p className="ml-6 p-1 text-center text-[0.6rem] font-medium uppercase tracking-wider text-color-yellow/30">
         Globi. © 2023
       </p>
-      <div
-            className="gradient-circle-footer"
-          />
+      <div className="gradient-circle-footer" />
       {/* <div>
       <p className='text-center'>© 2023 Engnr</p>
       <p className="hidden md:block">Contact: info@engnr.com</p>
