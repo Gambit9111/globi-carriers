@@ -17,10 +17,10 @@ function SuccessCard({ image, headline, pharagraph }: Props) {
   };
 
   return (
-    <div>
+    <div className="w-full">
       <div
         onClick={handleImageClick}
-        className="relative flex cursor-pointer flex-col"
+        className="relative flex cursor-pointer flex-col w-full"
       >
         <Image
           src={image}

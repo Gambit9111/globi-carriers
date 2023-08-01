@@ -234,51 +234,7 @@ const Home: NextPage<HomeProps> = () => {
             <span className="pl-1 text-color-yellow">"</span>
           </h1>
           <h2 className="mt-4 text-color-white/80">Curtis Porter, President</h2>
-          <div className="my-16 h-[1px] w-full bg-color-white" />
         </div>
-        {/* Success stories */}
-        <div className="space-y-8">
-          <h1 className="mb-8 text-2xl font-medium ">Our Stories</h1>
-          <SuccessCard
-            image={welder1png}
-            headline="Timothy"
-            pharagraph="A seasoned welder from a small town, Timothy desired larger-scale opportunities to showcase his skills. With Globi, he connected with a major construction company undertaking an infrastructure project in a bustling city. His portfolio and solid references landed him the role of Lead Welder. Today, he leads a team, contributing significantly to monumental projects, and symbolizes the possibilities that Globi provides for skilled tradespeople seeking growth and progress."
-          />
-          <SuccessCard
-            image={warehouse2png}
-            headline="Nia"
-            pharagraph="Once a forklift operator in a local warehouse, yearned for growth. Through Globi, she connected with a multinational logistics company, impressing them with her diligence and ambition. Today, Nia supervises an entire warehouse shift, efficiently managing goods movement. Her ascent, despite being in a male-dominated field, epitomizes Globi's mission of bridging the gap between potential and opportunities."
-          />
-          <SuccessCard
-            image={aircraft3}
-            headline="Viktor"
-            pharagraph="An Eastern European aircraft mechanic, sought international opportunities to broaden his experience. Globi helped him connect with a renowned global airline. His profound expertise and passion secured him the position. Today, Viktor serves as a vital part of the airline's maintenance team, working on cutting-edge aircraft. His story exemplifies Globi's commitment to connecting skilled individuals with opportunities, transcending borders and industries."
-          />
-          <SuccessCard
-            image={factory4}
-            headline="Anastasya"
-            pharagraph="Experienced machine operator, desired to take her passion for premium beer production to the next level. Using Globi, she found a position as a Head Machine Operator at a leading craft brewery. Her unique blend of technical skills and knowledge about the brewing process made her the perfect candidate. Today, Anastasya oversees the production line of one of the country's most esteemed breweries, ensuring every batch meets the highest quality standards. Her story showcases how Globi can match unique talents with niche industries to brew up success."
-          />
-          <SuccessCard
-            image={warehouse5}
-            headline="Igor"
-            pharagraph="At just 23, Igor from Ukraine displayed exceptional organizational and leadership skills that belied his young age. Keen to apply these talents in a demanding environment, he turned to Globi. Through our platform, he connected with an international corporation in need of an Area Manager for their large-scale warehouse. His youthful energy, strategic thinking, and ability to manage diverse teams quickly made him an indispensable asset to the company. Today, Igor successfully oversees daily operations, embodying Globi's vision of driving success through a perfect blend of talent and opportunity."
-          />
-          <SuccessCard
-            image={construction6}
-            headline="Tomas"
-            pharagraph="Hailing from a family of builders, Tomas was passionate about construction. But he aspired to shift from hands-on work to managerial roles. Globi bridged the gap, connecting him with a company seeking a site manager for an ambitious construction project. With his deep understanding of the field and leadership skills, Tomas made an instant impact. He is now successfully overseeing complex operations, ensuring projects are completed within scope and budget. Tomas' journey is testament to Globi's mission of empowering skilled professionals to reach their full potential."
-          />
-        </div>
-        <h1 className="my-12 text-xl">
-          Celebrating a decade of thought leadership, innovation and client
-          partnerships.
-        </h1>
-        <button className="mt-8 flex gap-4 rounded-sm bg-color-yellow px-12 py-4 tracking-tighter text-color-black hover:bg-color-yellow/20 hover:text-color-white">
-          <Link href="/about-us">
-            <p>Learn More</p>
-          </Link>
-        </button>
       </MainLayout>
     </>
   );

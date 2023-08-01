@@ -11,7 +11,7 @@ const MainLayout: React.FC<MainLayoutProps> = ({children}) => {
   return (
     <div className="flex flex-col min-h-screen tracking-tighter">
         <Header2 />
-      <main className="flex-grow px-4">
+      <main className="flex-grow px-4 xl:px-16">
         {children}
       </main>
         <Footer />
