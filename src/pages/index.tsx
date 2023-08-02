@@ -67,7 +67,18 @@ const Home: NextPage<HomeProps> = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <MainLayout>
-        <div className="relative flex min-h-screen flex-col items-start overflow-hidden">
+        {/* desktop */}
+        <div className="relative hidden min-h-screen xl:flex">
+          <motion.div
+            style={{ y: yPosition3 }}
+            variants={textVariants}
+            initial="hidden3"
+            animate="visible3"
+            className="gradient-circle"
+          />
+        </div>
+        {/* mobile */}
+        <div className="relative flex min-h-screen flex-col items-start overflow-hidden xl:hidden">
           {/* navbar gradient */}
           <motion.div
             style={{ y: yPosition3 }}
@@ -155,7 +166,7 @@ const Home: NextPage<HomeProps> = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: hasScrolled ? 1 : 0 }}
             transition={{ duration: 0.5 }}
-            className="text-2xl mt-12 font-medium tracking-tighter"
+            className="mt-12 text-2xl font-medium tracking-tighter"
           >
             We're not your average recruiting firm.
           </motion.h1>
@@ -208,9 +219,7 @@ const Home: NextPage<HomeProps> = () => {
           </motion.div>
           <div className="h-[1px] w-full bg-color-white" />
           {/* Service Pillars */}
-          <h1
-            className="mt-12 text-2xl font-medium tracking-tighter "
-          >
+          <h1 className="mt-12 text-2xl font-medium tracking-tighter ">
             Service Pillars
           </h1>
           <h2 className="mt-2 pr-10 tracking-tighter text-color-white/80">

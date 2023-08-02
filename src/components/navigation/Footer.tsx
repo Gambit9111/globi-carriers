@@ -7,10 +7,10 @@ type FooterProps = {};
 
 const Footer: React.FC<FooterProps> = () => {
   return (
-    <footer className="relative overflow-hidden bg-color-black ">
+    <footer className="relative overflow-hidden bg-color-black">
       <div className="mb-8 mt-16 h-[1px] w-full bg-color-white/50" />
       <div className="flex">
-        <div className="ml-4 flex w-12 flex-col items-center gap-8 pb-8">
+        <div className="ml-16 flex w-12 flex-col items-center gap-8 pb-8">
           <Link href="/" className="mt-4">
             <Image src={globi} width={150} alt="logo" />
           </Link>
